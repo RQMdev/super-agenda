@@ -1,0 +1,8 @@
+<h2>Contact is HERE</h2>
+<div *ngIf="contact">
+  <input class="name" [(ngModel)]="contact.name" placeholder="name"/>
+  <input class="surname" [(ngModel)]="contact.surname" placeholder="surname"/>
+  <input class="mail" [(ngModel)]="contact.mail" placeholder="mail"/>
+  <input class="phone-number" [(ngModel)]="contact.phoneNumber" placeholder="phoneNumber"/>
+  <button (click)="save()">SAVE</button>
+</div>

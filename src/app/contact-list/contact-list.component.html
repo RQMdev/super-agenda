@@ -1,0 +1,10 @@
+<a routerLink="/add">Add a new Contact</a>
+<h2>Contact list</h2>
+<ul *ngIf='contactList'>
+  <a *ngFor='let contact of contactList'
+  routerLink='/detail/{{contact.id}}'>
+    <li>
+      <span class='name'>{{contact.name}} {{contact.surname}}</span>
+    </li>
+  </a>
+</ul>
